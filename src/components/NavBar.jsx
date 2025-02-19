@@ -2,8 +2,8 @@ import {
   Box, Flex, Link, Spacer, Button, useDisclosure, VStack, HStack, Image, IconButton 
 } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
-// import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import Logo from '../assets/logo.png';
+import { BiMenu, BiX } from "react-icons/bi";
+import Logo from '../assets/logo.jpg';
 
 function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
@@ -25,7 +25,7 @@ function Navbar() {
         <Flex alignItems="center" justifyContent="space-between" maxW="1200px" mx="auto">
           {/* Logo */}
           <Link as={RouterLink} to="/">
-            <Image src={Logo} alt="Logo" width={90} borderRadius="4px" />
+            <Image src={Logo} alt="Logo" width={120} borderRadius="4px" />
           </Link>
 
           <Spacer />
@@ -47,7 +47,7 @@ function Navbar() {
           <IconButton
             display={{ base: 'block', md: 'none' }}
             aria-label="Toggle menu"
-            icon={isOpen ? "X" : "Open"}
+            icon={isOpen ? <BiX />: <BiMenu />}
             colorScheme="teal"
             onClick={onToggle}
           />
@@ -55,7 +55,7 @@ function Navbar() {
       </Box>
 
       {/* Mobile Menu (Only visible when toggled) */}
-      {isOpen && (
+      <Box display={isOpen ? "block" : "none"}>
         <VStack
           position="fixed"
           top="60px"
@@ -77,7 +77,7 @@ function Navbar() {
             Services
           </Link>
         </VStack>
-      )}
+      </Box>
 
       {/* Push page content down so it doesn't hide under fixed navbar */}
       <Box mt="60px"></Box>

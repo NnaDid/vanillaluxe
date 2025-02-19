@@ -1,6 +1,6 @@
 import { Box, Heading, Text, Button, VStack, useBreakpointValue } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import HeroImage from '../assets/vanillaFarm.jpg'
+import HeroImage from '../assets/ripe.jpg'
 
 function HeroSection() {
   return (
