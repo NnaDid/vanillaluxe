@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 import { motion } from 'framer-motion';
-import LuxuryImage from "../assets/vanillpods.png"
+import LuxuryImage from "../assets/powder.jpg"
 const LuxuryExperience = () => {
     return (
       <Box py={16} px={6} maxW="1200px" mx="auto">

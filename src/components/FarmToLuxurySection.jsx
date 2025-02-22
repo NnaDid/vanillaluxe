@@ -1,5 +1,5 @@
 import React from 'react'
-import FarmImage from '../assets/vanillaFresh.png'
+import FarmImage from '../assets/pod2.jpg'
 import { Box, Flex, Heading, Image, Text } from '@chakra-ui/react'
 
 const FarmToLuxurySection = () => {

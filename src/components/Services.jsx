@@ -1,8 +1,8 @@
 import { Box, Heading, Text, VStack, SimpleGrid, Image, Container } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import service1 from "../assets/vanilla1.png";
-import service2 from "../assets/vanilla2.png";
-import service3 from "../assets/vanilla3.png";
+import service2 from "../assets/pod3.png";
+import service3 from "../assets/hero2.jpg";
 
 const services = [
   {
