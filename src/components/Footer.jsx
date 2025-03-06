@@ -22,9 +22,9 @@ const Footer = () => {
 
         {/* Contact Info */}
         <VStack align="flex-end" spacing={1}>
-          <Text fontSize="sm">📞 +1 (123) 456-7890</Text>
+          {/* <Text fontSize="sm">📞 +1 (123) 456-7890</Text> */}
           <Text fontSize="sm">
-            ✉️ <Link href="mailto:contact@vanillaluxe.com" color="yellow.300">contact@vanillaluxe.com</Link> <br />
+            {/* ✉️ <Link href="mailto:contact@vanillaluxe.com" color="yellow.300">contact@vanillaluxe.com</Link> <br /> */}
             ✉️ <Link href="mailto:vanillaluxe6@gmail.com" color="yellow.300">vanillaluxe6@gmail.com</Link>
           
           </Text>
